@@ -1,0 +1,1478 @@
+@media (max-width: 1350px) {
+    .container > .ico .planet {
+        width: 650px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .plan_page .doughnut_chart {
+        .centered {
+            .legend {
+                width: 40%;
+                float: right;
+            }
+
+            &.reverse {
+                .legend {
+                    float: left;
+                }
+            }
+        }
+    }
+
+    .plan_page .skynet_graph .blocks > div {
+        margin-left: 11px;
+        margin-right: 11px;
+
+        &:nth-child(2) {
+            margin-left: 11px;
+            margin-right: 11px;
+        }
+    }
+
+    .carousel .bx-wrapper {
+        max-width: 635px !important;
+    }
+
+    .things {
+        padding-top: 30px;
+
+        .info {
+            width: 100%;
+        }
+
+        .img {
+            padding-top: 230px;
+            float: left;
+            margin-left: 70px;
+        }
+    }
+
+    .road_page .roadmap .map .line .description > div {
+        width: 178px;
+        padding: 60px 10px 0 10px;
+    }
+
+    .road_page .network .folder .box {
+        padding: 60px 125px 30px 45px;
+        width: 605px;
+        height: 401px;
+        background-size: 100%;
+
+        .social {
+            padding-top: 30px;
+        }
+    }
+
+    .road_page .network .folder {
+        width: 885px;
+    }
+
+    .road_page .network .folder .tabs {
+        width: 300px;
+        float: right;
+
+        > div {
+            height: 50px;
+
+            &:before {
+                height: 48px;
+            }
+
+            span {
+                line-height: 50px;
+            }
+        }
+    }
+
+    .most {
+        .video {
+            width: 600px;
+
+            img {
+                width: 100%;
+            }
+
+            .play {
+                margin: -46px 0 0 -47px;
+            }
+        }
+    }
+
+    .blockchain, .internet {
+        .explanation {
+            padding-right: 0 !important;
+        }
+
+        .img {
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .iot {
+        .image {
+            width: 400px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .info {
+            h1 {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .novel {
+        padding-top: 80px;
+
+        .picture_box {
+            padding-top: 85px;
+        }
+
+        .image {
+            width: 470px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .brain {
+        .img {
+            width: 360px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .container > .ico {
+        height: 570px;
+
+        .planet {
+            width: 450px;
+        }
+    }
+
+    header {
+        .logo {
+            width: 100%;
+            text-align: center;
+        }
+
+        > ul {
+            padding-left: 25px;
+            padding-right: 25px;
+            text-align: center;
+
+            li {
+                display: inline-block;
+                float: none;
+            }
+        }
+
+        .buttons_box {
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+
+            a.btn {
+                float: none;
+                margin: 0 15px;
+                width: 85px;
+            }
+        }
+    }
+
+    .centered {
+        width: 999px;
+    }
+
+    .board {
+        .centered {
+            .people_board {
+                .block {
+                    .image {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .plan_page .doughnut_chart .chart_column {
+        @include zoom(.6);
+    }
+
+    .plan_page .doughnut_chart .legend ul li {
+        font-size: 15px;
+    }
+
+    .plan_page .doughnut_chart .chart_column .data .percent {
+        font-size: 50px;
+    }
+
+    .plan_page .doughnut_chart .chart_column .data .text {
+        font-size: 22px;
+    }
+
+    .plan_page .doughnut_chart .legend {
+        padding-top: 100px;
+    }
+
+    .plan_page .doughnut_chart .reverse .chart_column {
+        margin-top: 500px;
+    }
+
+    @-moz-document url-prefix() {
+        .plan_page .doughnut_chart .reverse .chart_column {
+            margin-top: 150px;
+        }
+
+        .plan_page .doughnut_chart .chart_column {
+            margin-top: 50px;
+        }
+    }
+    
+    .carousel.static {
+        width: auto;
+
+        .centered {
+            width: 100%;
+        }
+
+        ul.bx-news {
+           // margin-top: 0px !important;
+            width: 725px;
+            margin-left: auto;
+            margin-right: auto;
+
+            li {
+             //   margin: 30px 0 0 0 !important;
+                width: 225px;
+
+                .image {
+                    height: 180px;
+                }
+            }
+        }
+    }
+    .road_page .roadmap .map .line .description {
+        float: none;
+        width: 600px;
+        margin: 0 auto;
+    }
+    .road_page .internet_box {
+        height: 530px;
+
+        .centered .box {
+            padding-top: 70px;
+        }
+
+        > img {
+            @include zoom(.7);
+        }
+    }
+
+    .road_page {
+        .become {
+            background-position: 50% 20px;
+            .right, .left {
+                width: 100%;
+                padding-left: 0;
+            }
+
+            .bx-wrapper {
+                margin: 0 auto;
+            }
+
+            .right {
+                h1, h2, .explanation {
+                    text-align: center;
+                }
+            }
+
+            .centered {
+                padding-top: 100px;
+                padding-bottom: 40px;
+            }
+        }
+        .contact {
+            padding-top: 60px;
+
+            .left {
+                width: 100%;
+                
+                h1, h2, .explanation {
+                    text-align: center;
+                }
+            }
+
+            .right {
+                width: 100%;
+            }
+        }
+
+        .most {
+            .centered {
+                padding-top: 80px;
+            }
+        }
+    }
+
+    .most {
+        .centered {
+            padding-top: 30px;
+
+            h1, h2, .explanation {
+                text-align: center;
+            }
+        }
+
+        .info {
+            width: 100%;
+            padding-bottom: 40px;
+        }
+    }
+
+    .statement.three_col {
+        .block {
+            padding-right: 35px;
+            padding-top: 80px;
+        }
+    }
+
+    .blockchain, .internet {
+        padding-top: 25px !important;
+
+        .info {
+            width: 100%;
+        }
+
+        .img {
+            padding-left: 0;
+
+            img {
+                width: 70%;
+                float: none;
+                margin-top: 40px;
+            }
+        }
+    }
+    .network {
+        .explanation {
+            .picture {
+                text-align: center;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    .iot {
+        padding-top: 75px;
+
+        .image {
+            width: 270px;
+        }
+    }
+
+    .novel {
+        .info {
+            width: 100%;
+
+            h1 {
+                padding-top: 0px;
+            }
+        }
+
+        .image {
+            float: none;
+            margin: 0 auto;
+            
+            img {
+                margin-top: 35px;
+            }
+        }
+
+        .picture_box {
+            .item {
+                margin: 0 22px 40px 22px;
+            }
+        }
+
+        .actions {
+            padding-top: 20px;
+        }
+    }   
+
+    .statement {
+        padding-top: 10px;
+
+        &.two_col {
+            .block {
+                padding: 55px 25px 0 40px !important;
+            }
+        } 
+    }
+
+    .brain {
+        padding-top: 65px;
+
+        .img {
+            width: 100%;
+            text-align: center;
+            padding-top: 30px;
+
+            img {
+                width: 60% !important;
+            }
+        }
+
+        .info {
+            width: 100%;
+        }
+    }
+
+    .centered {
+        width: 768px;
+    }
+
+    .alert {
+        text-align: center;
+
+        h3 {
+            width: 100%;
+        }
+
+        .btn {
+            float: none;
+        }
+
+        .close {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -6px;
+        }
+    }
+
+    .board .centered .people_board .block {
+        width: 100%;
+    }
+
+    .research .explanation .evolutionary {
+        @include zoom(.9);
+    }  
+}
+
+@media (max-width: 999px) {
+    .road_page .faq .centered {
+        width: 545px;
+    }
+
+    .carousel ul .left {
+        margin-left: -75px;
+    }
+
+    .carousel ul .right {
+        margin-right: -75px;
+    }
+
+    .container > .ico {
+        height: 490px;
+
+        .box .numbers span {
+            width: 90px;
+            height: 60px;
+            font-size: 21px;
+            color: #9eaacc;
+            line-height: 60px;
+        }
+        
+        .planet {
+            width: 300px;
+        }
+    }
+
+    h1, .container .ico .box h1 {
+        font-size: 75px;
+    }
+
+    h2, .container .ico .box h2 {
+        font-size: 28px;
+        margin-top: -37px;
+    }
+
+    .chip .picture {
+        padding-bottom: 80px;
+
+        img {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .road_page .roadmap .map .points {
+        @include zoom(.7);
+    }
+    .road_page .network .folder {
+        margin-top: 80px;
+
+        .box {
+            padding: 30px 25px 30px 30px;
+            width: 475px;
+            height: 312px;
+    
+            h3 {
+                font-size: 25px;
+            }
+    
+            .explanation {
+                font-size: 14px;
+                line-height: 180%;
+            }
+        }
+    }
+
+    .road_page .network .folder {
+        width: 655px;
+    }
+
+    .road_page .network .folder .tabs {
+        width: 200px;
+
+        > div {
+            height: 39px;
+            line-height: 39px;
+            padding-left: 40px;
+
+            &:before {
+                height: 37px;
+            }
+
+            span {
+                line-height: 37px;
+            }
+        }
+    }
+
+    .road_page .network .folder:before {
+        width: 150px;
+        height: 40px;
+        top: -33px;
+    }
+}
+
+@media (max-width: 880px) {
+    .carousel .bx-wrapper {
+        max-width: 635px !important;
+    }
+
+    .road_page .internet_box {
+        height: 380px;
+
+        .centered .box {
+            padding-top: 70px;
+        }
+
+        > img {
+            @include zoom(.5);
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .plan_page .skynet_graph {
+        .hints > div {
+            width: 100%;
+            padding-right: 0;
+    
+            &:first-child {
+                padding-right: 0;
+            }
+        }
+
+        .actions {
+            .btn {
+                width: 180px !important;
+                box-sizing: border-box;
+                margin: 0;
+            }
+        }
+    }
+
+    .carousel .bx-wrapper {
+        max-width: 305px !important;
+    }
+
+    .road_page .newsletter .centered {
+        width: 100%;
+
+        input[type=text] {
+            width: 100%;
+        }
+    }
+    .road_page .network .centered {
+        width: 100%;
+    }
+
+    .things {
+        padding-top: 30px;
+
+        .info {
+            width: 100%;
+        }
+
+        .img {
+            padding-top: 230px;
+            float: left;
+            margin-left: 140px;
+            width: 400px;
+
+            img {
+                width: 100%;
+            }
+
+            .hint {
+                &.hint1 {
+                    bottom: 320px;
+                    left: 0;
+                }
+
+                &.hint2 {
+                    bottom: 410px;
+                    left: 130px;
+                }
+
+                &.hint3 {
+                    bottom: 360px;
+                    left: 259px;
+                }
+
+                &.hint4 {
+                    top: 100%;
+                    left: 215px;
+                }
+
+                &.hint5 {
+                    top: 96%;
+                    left: 340px;
+                }
+            }
+        }
+    }
+
+    .statement.three_col {
+        .block {
+            width: 100%;
+            padding-right: 0;
+            padding-top: 30px;
+        }
+    }
+
+    .iot {
+        .image {
+            width: 100%;
+            text-align: center;
+
+            img {
+                width: 50%;
+                float: none;
+                margin-top: 30px;
+            }
+        }
+
+        .info {
+            width: 100%;
+        }
+    }
+
+    .centered {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .roadmap {
+        .centered {
+            box-sizing: content-box;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .alert {
+        .centered {
+            .close {
+                right: 25px;
+            }
+        }
+    }
+
+    .explanation {
+        box-sizing: border-box;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .research .explanation .evolutionary {
+        @include zoom(.8);
+    }  
+}
+
+@media (max-width: 750px) {
+    .plan_page .stages h1 {
+        margin-top: 50px;
+    }
+
+    .plan_page .doughnut_chart {
+        .centered {
+            .chart_column {
+                @include zoom(1);
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+                width: 475px;
+                margin-top: 100px;
+            }
+    
+            .legend {
+                width: 100%;
+
+                ul li {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    .most .video {
+        width: 450px;
+    }
+
+    .road_page .faq .centered {
+        width: 460px;
+    }
+
+    .road_page {
+        .internet_box {
+            height: auto;
+            text-align: center;
+
+            .centered {
+                h1, h2, .explanation {
+                    text-align: center;
+                }
+
+                .box {
+                    width: 100%;
+                }
+            }
+
+            > img {
+                position: relative;
+                width: 80%;
+                @include zoom(1);
+
+            }
+        }
+    }
+    .road_page .network .folder {
+        width: 100%;
+
+        &:before {
+            display: none;
+        }
+
+        .box {
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            float: none;
+        }
+
+        .tabs {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+
+    .research .explanation .evolutionary {
+        @include zoom(.7);
+    }  
+
+    .container > .ico {
+        .planet {
+            opacity: .6 !important;
+        }
+    }
+
+    .carousel.static {
+        ul.bx-news {
+            margin-top: 0px !important;
+            width: 305px;
+            margin-left: auto;
+            margin-right: auto;
+   
+            li {
+                margin: 30px 0 0 0 !important;
+                width: 305px;
+   
+                .image {
+                    height: 215px;
+                }
+            }
+       }
+    }
+}
+
+@media (max-width: 650px) {
+    @-moz-document url-prefix() {
+        .plan_page .doughnut_chart {
+            .centered {
+                .legend {
+                    margin-top: -120px;
+                }
+            }
+        }
+    }
+
+
+    .plan_page .doughnut_chart {
+        .centered {
+            .chart_column {
+                @include zoom(.8);
+            }
+        }
+    }
+
+    .road_page .newsletter {
+        padding-top: 40px;
+    }
+
+    .road_page .roadmap .map .line .description {
+        width: 320px;
+
+        > div {
+            width: 140px;
+            padding: 30px 10px 0 10px;
+            min-height: 130px;
+            line-height: 25px;
+
+            &:before {
+                top: 20px;
+            }
+        }
+
+    }
+    .road_page .roadmap .map .points {
+        @include zoom(0.4);
+    }
+    .road_page .faq .bx-controls-direction a.bx-prev {
+        margin-top: 7px;
+        margin-left: -9px;
+    }
+
+    .road_page .faq .bx-controls-direction a.bx-next {
+        margin-right: -16px;
+        margin-top: 7px;
+    }
+
+    .most {
+        .centered {
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        .info {
+            padding-bottom: 40px;
+        }
+
+        .video {
+            width: 100%;
+        }
+    }
+
+    .things {
+        .img {
+            margin-left: 90px;
+        }
+    }
+
+    .statement {
+        padding-top: 10px;
+
+        &.two_col {
+            .block {
+                padding: 25px 0 0 0 !important;
+                width: 100%;
+            }
+        } 
+    }
+
+    h1, .container .ico .box h1 {
+        font-size: 55px;
+        padding-top: 30px;
+    }
+
+    .chip .picture img {
+        width: 70%;
+    }
+
+    .picture_box .item:nth-child(2) {
+        margin: 0;
+    }
+
+    h2, .container .ico .box h2 {
+        font-size: 22px;
+        margin-top: -29px;
+    }
+
+    .explanation {
+        font-size: 15px;
+        line-height: 180%;
+    }
+
+    .foundation {
+        .explanation {
+            .picture {
+                img {
+                    width: 230px;
+                }
+            }
+        }
+    }
+
+    .alert .btn {
+        margin-right: 10px;
+    }
+
+    .research .explanation .evolutionary {
+        @include zoom(.6);
+    } 
+
+    .skynet .explanation .picture img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .plan_page {
+        footer {
+            margin-top: 45px;
+        }
+    }
+
+    .things {
+        .img {
+            margin-left: 50px;
+            @include zoom(.9);
+        }
+    }
+
+    .novel {
+        .image {
+            width: 320px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .container > .ico {
+        .box {
+            width: 400px;
+            margin: 0 auto;
+            float: none;
+
+            .title.small span {
+                font-size: 10px;
+                margin-right: 10px;
+            }
+
+            .actions {
+                text-align: center;
+
+                .btn {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .planet {
+            opacity: .5 !important;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    @-moz-document url-prefix() {
+        .plan_page .doughnut_chart .centered .chart_column {
+            margin-left: -50px !important;
+        }
+
+        .plan_page .doughnut_chart {
+            .centered {
+                width: 440px;
+
+                .legend {
+                    margin-top: -200px;
+                }
+            }
+        }
+    }
+
+    .plan_page .doughnut_chart {
+        .centered {
+            .chart_column {
+                @include zoom(.6);
+            }
+
+            .legend {
+                padding-top: 50px;
+            }
+        }
+    }
+
+    .road_page .faq {
+        .bx-controls-direction a.bx-prev {
+            margin-top: -5px;
+            margin-left: 0;
+        }
+    
+        .bx-controls-direction a.bx-next {
+            margin-right: 0;
+            margin-top: -5px;
+        }
+
+        .centered {
+            width: 100%;
+            @include zoom(0.8);
+        }
+    }
+    .road_page .network .folder .box {
+        padding: 20px;
+        width: 300px;
+        height: 198px;
+
+        h3 {
+            font-size: 17px;
+            padding-bottom: 12px;
+        }
+
+        .explanation {
+            font-size: 11px;
+            line-height: 140%;
+        }
+
+        .social {
+            @include zoom(.7);
+
+            a img {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .carousel .steps {
+        width: 320px;
+
+        &:before,
+        &:after {
+            width: 92px;
+        }
+    }
+
+    .iot {
+        padding-top: 30px;
+
+        .image {
+            img {
+                width: 80%;
+            }
+        }
+    }
+
+    .novel {
+        .picture_box {
+            .item {
+                margin: 0 0px 40px 0px;
+            }
+        }
+    }
+
+    .btn {
+        margin: 10px 45px 0 45px;
+    }
+
+    .container > .ico {
+        .box .actions .btn {
+            margin: 0 0 15px 0;
+        }
+    }
+
+    header > ul li {
+        margin-right: 8px;
+    }
+
+    .board .centered .people_board .block {
+        padding-top: 60px;
+
+        .image {
+            width: 150px;
+        }
+    
+        .info {
+            padding-right: 0;
+        }
+    }
+
+    .container {
+        .legal {
+            padding-top: 30px;
+            margin-top: 50px;
+
+            .logotypes a {
+                margin: 30px 20px 0 20px;
+            }
+        }
+
+        .duplicate_nav li {
+            padding: 0 4px;
+        }
+
+        header .buttons_box a.btn {
+            margin: 0;
+        }
+    }
+
+    h1, .container .ico .box h1 {
+        font-size: 38px;
+        padding-top: 20px;
+    }
+
+    h2, .container .ico .box h2 {
+        font-size: 15px;
+        margin-top: -20px;
+    }
+
+    .board {
+        .centered {
+            .people_board {
+                .block {
+                    .image {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    .research .explanation .evolutionary {
+        @include zoom(.45);
+    }    
+
+    .carousel.static ul.bx-news {
+        width: 305px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .carousel .bx-wrapper {
+        max-width: 305px !important;
+
+        li {
+            width: 305px;
+        }
+    }
+
+    .carousel.static {
+        .bx-wrapper {
+            max-width: 305px !important;
+        }
+
+        ul {
+            li {
+                width: 305px !important;
+            }
+        }
+    }
+
+    .carousel .bx-controls-direction a.bx-prev {
+        margin-left: -45px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .carousel .bx-controls-direction a.bx-next {
+        margin-right: -45px;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .things .img {
+        @include zoom(.8);
+    }
+
+    .road_page .roadmap .map .line .track {
+        width: 368px;
+
+        .space {
+            width: 65px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    @-moz-document url-prefix() {
+        .plan_page .doughnut_chart .centered .chart_column {
+            margin-left: -100px !important;
+        }
+
+        .plan_page .doughnut_chart {
+            .centered {
+                width: 340px;
+            }
+        }
+    }
+
+    .plan_page .skynet_graph .blocks {
+        > div {
+            max-width: 350px;
+            width: auto;
+            padding: 4px 19px 0px 19px;
+
+            .number {
+                font-size: 25px;
+
+                span {
+                    font-size: 15px;
+                }
+
+            }
+
+            img {
+                width: 100%;
+            }
+
+        }
+    }
+
+    .carousel ul li {
+        width: 290px !important;
+    }
+
+    div.carousel.slider {
+        .bx-wrapper {
+            width: 220px !important;
+        }
+        
+        ul li {
+            width: 220px !important;
+    
+            .image {
+                height: 160px;
+            }
+        }
+    }
+
+    .things .img {
+        @include zoom(.7);
+    }
+
+    .carousel .steps {
+        width: 280px !important;
+
+        &:before,
+        &:after {
+            width: 71px;
+        }
+    }
+
+    .picture_box .item {
+        width: 270px;
+    }
+
+    .skynet .explanation .actions .btn {
+        margin-bottom: 15px;
+    }
+
+    .skynet .explanation p {
+        padding-bottom: 25px;
+    }
+
+    .chip .picture_box {
+        padding-bottom: 0;
+    }
+
+    .chip .picture {
+        padding-bottom: 40px;
+    }
+
+    .container > .ico {
+        height: 520px;
+
+        .box {
+            width: 270px;
+    
+            .actions .btn.apply {
+                margin-bottom: 15px;
+            }
+    
+            .title {
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            .track {
+                + .title span {
+                    &:first-child {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+    
+            .numbers {
+                span {
+                    width: 78px;
+                    height: 48px;
+                    font-size: 17px;
+                    line-height: 48px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    @-moz-document url-prefix() {
+        .plan_page .doughnut_chart .centered .chart_column {
+            margin-left: -120px !important;
+        }
+
+        .plan_page .doughnut_chart {
+            .centered {
+                width: 300px;
+
+                .legend {
+                    margin-top: -300px;
+                }
+            }
+        }
+    }
+
+    .plan_page .doughnut_chart {
+        .centered {
+            .chart_column {
+                @include zoom(.45);
+            }
+
+            .legend {
+                ul li {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .carousel.static {
+        .bx-wrapper {
+            max-width: 280px !important;
+        }
+
+        ul {
+            width: 280px !important;
+            li {
+                width: 280px !important;
+            }
+        }
+    }
+
+    .road_page .roadmap .map .points {
+        @include zoom(.35);
+    }
+    .road_page .roadmap .map .line .track {
+        @include zoom(.8);
+    }
+    .road_page .faq {
+        .centered {
+            @include zoom(0.7);
+        }
+    }
+
+    .road_page .become .left .bx-slider li {
+        padding: 13px 20px 0px 20px;
+
+        .info {
+            padding-left: 40px;
+
+            .head span {
+                font-size: 13px;
+            }
+        }
+    }
+    
+    .most {
+        .centered {
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        .info {
+            padding-bottom: 40px;
+        }
+    }
+
+    .things .img {
+        @include zoom(.55);
+    }
+
+    .research .explanation .evolutionary {
+        @include zoom(.3);
+    }  
+
+    .network {
+        .explanation {
+            .picture {
+                img {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .novel {
+        .image {
+            width: 270px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .actions {
+            padding-top: 0;
+        }
+    }
+}

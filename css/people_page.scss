@@ -1,0 +1,207 @@
+.people_page {
+    background: url('../img/people_bg.jpg') no-repeat 50% 0, url('../img/people_bg_repeat.jpg') repeat-y 50% 0;
+    background-size: 100%;
+
+    .container {
+        background: url('../img/object.png') no-repeat 50% 0;
+        background-size: 100%;
+    }
+}
+
+.foundation {
+    background: url('../img/foundation_left.png') no-repeat 50% 0;
+
+    .centered {
+        background: url('../img/foundation_right.png') no-repeat 50% 0;
+    }
+}
+
+.duplicate_nav {
+    float: left;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin-top: 32px;
+
+    li {
+        display: inline-block;
+        padding: 0 10px;
+
+        a {
+            color: #9eaacc;
+            font-size: 14px;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.research {
+    .explanation {
+        .evolutionary {
+            height: 630px;
+            margin-top: 30px;
+            padding-top: 45px;
+            color: #9eaacc;
+            font-size: 17px;
+            position: relative;
+
+            span {
+                position: absolute;
+
+                &.ev_robotics {
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                }
+
+                &.blockchain {
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                }
+
+                &.wifi {
+                    right: 50%;
+                    top: 156px;
+                    width: 150px;
+                    text-align: left;
+                    margin-right: 255px;
+                }
+
+                &.intelligence {
+                    right: 50%;
+                    top: 325px;
+                    text-align: left;
+                    margin-right: 320px;
+                }          
+
+                &.edge {
+                    left: 50%;
+                    top: 172px;
+                    text-align: left;
+                    margin-left: 265px;
+                }
+
+                &.photonics {
+                    left: 50%;
+                    top: 325px;
+                    text-align: left;
+                    margin-left: 315px;
+                }
+
+                &.muscles {
+                    right: 50%;
+                    bottom: 167px;
+                    text-align: left;
+                    margin-right: 270px;
+                }
+
+                &.neuromorphics {
+                    left: 50%;
+                    bottom: 167px;
+                    text-align: left;
+                    margin-left: 270px;
+                }
+            }
+        }
+
+        .btn {
+            border: 2px solid #73a0fe;
+            padding: 0 45px;
+            margin: 60px 0 10px 0;
+
+            &:hover {
+                box-shadow: 0 0 15px #73a0fe;
+            }
+        }
+    }
+}
+
+.board {
+    .people_board {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 50px;
+
+        .block {
+            width: 50%;
+            display: table;
+            padding-top: 100px;
+            float: left;
+
+            .image {
+                display: table-cell;
+                width: 255px;
+                vertical-align: top;
+
+                img {
+                    float: left;
+                    border-radius: 8px;
+                    width: 100%;
+                }
+            }
+
+            .info {
+                display: table-cell;
+                vertical-align: top;
+                padding: 0 35px 37px 25px;
+                color: #9eaacc;
+                position: relative;
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: normal;
+                    color: #dee2ee;
+                    line-height: 110%;
+                }
+
+                .title {
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding-top: 5px;
+                }
+
+                p {
+                    line-height: 19px;
+                    padding-top: 15px;
+
+                    &.social {
+                        position: absolute;
+                        bottom: 0;
+
+                        img {
+                            vertical-align: middle;
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.legal {
+    background: url('../img/line1_bg.png') no-repeat 50% 0;
+    background-size: 100%;
+    padding-top: 75px;
+    margin-top: 100px;
+
+    &.partners {
+        background-image: url('../img/line2_bg.png');
+        margin-top: 40px;
+    }
+
+    .logotypes {
+        text-align: center;
+        font-size: 0;
+
+        a {
+            margin: 60px 60px 0 60px;
+            display: inline-block;
+        }
+    }
+}
