@@ -7,9 +7,9 @@ $(document).ready(function() {
         var m = parseInt(s / 60) % 60;
         s = s % 60;
 
-        document.getElementById('days').innerHTML = h.toString().length == 1 ? 0 : h.toString();
-        document.getElementById('hours').innerHTML = m.toString().length == 1 ? 0 : m.toString();
-        document.getElementById('mins').innerHTML = s.toString().length == 1 ? 0 : s.toString();
+        document.getElementById('hour').innerHTML = h.toString().length == 1 ? 0 : h.toString();
+        document.getElementById('min').innerHTML = m.toString().length == 1 ? 0 : m.toString();
+        document.getElementById('sec').innerHTML = s.toString();
     }
 
     if ($(".ico .numbers").length > 0) {
