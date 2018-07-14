@@ -2,6 +2,24 @@
     .container > .ico .planet {
         width: 650px;
     }
+
+    .road_page .roadmap .track {
+        width: 755px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .circle {
+            margin-bottom: 20px;
+        }
+
+        .circle16 {
+            margin-left: 0;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -736,6 +754,117 @@
     }  
 }
 
+@media (max-width: 800px) {
+    .road_page .newsletter {
+        padding-top: 100px;
+    }
+
+    .road_page .roadmap {
+        .map {
+            display: none;
+        }
+
+        .track {
+            width: 100%;
+
+            .circle.active + .tooltip, .tooltip {
+                display: none !important;
+            }
+            
+            .circle {
+                background: none;
+                display: block;
+                width: 100%;
+                height: auto;
+                float: left;
+                margin-left: 0;
+                padding-bottom: 90px;
+                margin-bottom: 0;
+
+                > div, > p {
+                    display: block;
+                }
+
+                .head {
+                    color: #dee2ee;
+                    float: left;
+                    width: 100%;
+                    font-size: 13px;
+                    padding-top: 20px;
+                    text-transform: uppercase;
+                }
+
+                > p {
+                    color: #9eaacc;
+                    font-size: 13px;
+                    line-height: 130%;
+                    float: left;
+                    width: 100%;
+                    padding-top: 10px;
+                    padding-bottom: 7px;
+                }
+
+                .text {
+                    color: #667bd8;
+                    font-size: 13px;
+                    line-height: 32px;
+                    display: none;
+                    padding-bottom: 10px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                }
+
+                .click {
+                    display: inline-block;
+
+                    &.active {
+                        background-position: 0 100%;
+                    }
+                }
+
+                &:first-child {
+                    &:before {
+                        display: block;
+                    }
+                }
+                &.circle25 {
+                    padding-bottom: 0;
+
+                    &:hover:before, &:before {
+                        display: none;
+                    }
+                }
+
+                &.circle16 {
+                    &:before {
+                        display: block;
+                    }
+                }
+
+                &:before {
+                    width: 2px;
+                    height: 90px;
+                    left: 50%;
+                    bottom: 0;
+                    margin: 0;
+                    margin-left: -1px;
+                }
+
+               
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 801px) {
+    .road_page .roadmap .track .circle .text {
+        display: none !important;
+    }
+}
+
 @media (max-width: 750px) {
     .plan_page .stages h1 {
         margin-top: 50px;
@@ -1234,7 +1363,7 @@
         @include zoom(.8);
     }
 
-    .road_page .roadmap .map .line .track {
+    .road_page .roadmap .track {
         width: 368px;
 
         .space {
@@ -1412,8 +1541,8 @@
     .road_page .roadmap .map .points {
         @include zoom(.35);
     }
-    .road_page .roadmap .map .line .track {
-        @include zoom(.8);
+    .road_page .roadmap .track {
+       // @include zoom(.8);
     }
     .road_page .faq {
         .centered {

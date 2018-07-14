@@ -12,6 +12,25 @@ $(document).ready(function() {
         document.getElementById('sec').innerHTML = s.toString();
     }
 
+    $('.track .click').on('click', function(){
+        if (!$(this).hasClass('active')) {
+            $('.track .click.active').removeClass('active');
+            $(this).addClass('active');
+            $('.track .text').slideUp();
+            $(this).closest('.circle').find('.text').slideDown();
+        }
+    });
+
+    $('.track .circle').each(function(){
+        $(this).prepend($(this).attr('title'))
+    });
+
+    $('.track .circle[data-toggle="tooltip"]').tooltip({'placement' : 'bottom', 'trigger' : 'click hover'});
+    $('.track .circle').on('show.bs.tooltip', function() {
+        $('.tooltip').not(this).tooltip('hide');
+    });
+
+
     if ($(".ico .numbers").length > 0) {
         setInterval(Timer, 1000, 'August 21, 2018')
     }
@@ -24,23 +43,21 @@ $(document).ready(function() {
         $(this).closest('.points').find('> div').removeClass('active');
         $(this).addClass('active');
 
-        var index = $('.points > div').index($(this));
+        var index = $('.points > div').index($(this)) + 1;
         $('.track .circle').removeClass('active');
-        $('.track .space').removeClass('active');
         $('.track .circle' + (index + 1)).addClass('active');
 
         $('.description > div').removeClass('active');
-        $('.description > div').eq(index).addClass('active');
+        $('.description > div').eq(index - 1).addClass('active');
 
-        for (var i = 1; i <= 5; i++) {
-            if (i <= index) {
-                $('.track .circle' + i).addClass('active');
-                $('.track .space' + i).addClass('active');
+        for (var i = 1; i <= 25; i++) {
+            if (i <= index*5) {
+                $('.track .circle' + (i)).addClass('active');
             }
         }
 
         $('.line .overview > div').removeClass('active');
-        $('.line .overview > div').eq(index).addClass('active');
+        $('.line .overview > div').eq(index - 1).addClass('active');
     });
 /*
     $('.carousel').length > 0 ? $('.carousel').carousel({

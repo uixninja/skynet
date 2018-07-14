@@ -1,3 +1,4 @@
+@import url(tooltip.css);
 .people_page {
   background: url("../img/people_bg.jpg") no-repeat 50% 0, url("../img/people_bg_repeat.jpg") repeat-y 50% 0;
   background-size: 100%; }
@@ -888,11 +889,68 @@
   .road_page .roadmap {
     position: relative;
     overflow: hidden; }
+    .road_page .roadmap h2 {
+      padding-bottom: 45px; }
+    .road_page .roadmap .track {
+      width: 100%;
+      padding-top: 50px;
+      margin-bottom: -30px;
+      text-align: center;
+      position: relative;
+      z-index: 2; }
+      .road_page .roadmap .track .tooltip .head {
+        color: #fff;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 130%; }
+        .road_page .roadmap .track .tooltip .head + p {
+          color: #9eaacc;
+          font-size: 12px;
+          line-height: 140%;
+          padding-top: 5px; }
+      .road_page .roadmap .track .circle {
+        width: 18px;
+        height: 18px;
+        background: url("../img/dots.png") no-repeat 0 0;
+        display: inline-block;
+        margin-left: 31px;
+        position: relative; }
+        .road_page .roadmap .track .circle .click {
+          display: none;
+          width: 46px;
+          height: 46px;
+          background: url(../img/points.png) no-repeat 0 0;
+          margin: 0 auto; }
+        .road_page .roadmap .track .circle > div, .road_page .roadmap .track .circle > p {
+          display: none; }
+        .road_page .roadmap .track .circle .text {
+          display: none; }
+        .road_page .roadmap .track .circle:first-child {
+          margin-left: 0; }
+          .road_page .roadmap .track .circle:first-child:before {
+            display: none; }
+        .road_page .roadmap .track .circle + .tooltip {
+          display: none !important; }
+        .road_page .roadmap .track .circle.active {
+          background-position: 0 bottom; }
+          .road_page .roadmap .track .circle.active + .tooltip {
+            display: block !important; }
+          .road_page .roadmap .track .circle.active:before {
+            background: #75a1fe; }
+        .road_page .roadmap .track .circle:before {
+          content: "";
+          width: 30px;
+          height: 2px;
+          margin: 6px 2px;
+          background: #434f74;
+          left: -34px;
+          position: absolute; }
     .road_page .roadmap .map {
       width: 100%;
       float: left;
       margin-top: -70px;
-      position: relative; }
+      position: relative;
+      z-index: 1; }
       .road_page .roadmap .map .points {
         padding-top: 210px;
         background: url("../img/wave.png") no-repeat 50% 0px;
@@ -939,25 +997,6 @@
           font-size: 14px;
           text-align: center;
           line-height: 38px; }
-        .road_page .roadmap .map .line .track {
-          width: 468px;
-          margin: 0 auto;
-          padding-top: 8px; }
-          .road_page .roadmap .map .line .track .circle {
-            width: 18px;
-            height: 18px;
-            background: url("../img/dots.png") no-repeat 0 0;
-            float: left; }
-            .road_page .roadmap .map .line .track .circle.active {
-              background-position: 0 bottom; }
-          .road_page .roadmap .map .line .track .space {
-            width: 90px;
-            height: 2px;
-            margin: 6px 2px;
-            background: #434f74;
-            float: left; }
-            .road_page .roadmap .map .line .track .space.active {
-              background: #75a1fe; }
         .road_page .roadmap .map .line .description {
           float: left;
           width: 100%; }
@@ -1945,7 +1984,18 @@ h2 {
 
 @media (max-width: 1350px) {
   .container > .ico .planet {
-    width: 650px; } }
+    width: 650px; }
+
+  .road_page .roadmap .track {
+    width: 755px;
+    margin-left: auto;
+    margin-right: auto; }
+    .road_page .roadmap .track .circle {
+      margin-bottom: 20px; }
+    .road_page .roadmap .track .circle16 {
+      margin-left: 0; }
+      .road_page .roadmap .track .circle16:before {
+        display: none; } }
 @media (max-width: 1200px) {
   .plan_page .doughnut_chart .centered .legend {
     width: 40%;
@@ -2396,6 +2446,73 @@ h2 {
     -ms-zoom: 0.8;
     -webkit-zoom: 0.8;
     -moz-transform: scale(0.8); } }
+@media (max-width: 800px) {
+  .road_page .newsletter {
+    padding-top: 100px; }
+
+  .road_page .roadmap .map {
+    display: none; }
+  .road_page .roadmap .track {
+    width: 100%; }
+    .road_page .roadmap .track .circle.active + .tooltip, .road_page .roadmap .track .tooltip {
+      display: none !important; }
+    .road_page .roadmap .track .circle {
+      background: none;
+      display: block;
+      width: 100%;
+      height: auto;
+      float: left;
+      margin-left: 0;
+      padding-bottom: 90px;
+      margin-bottom: 0; }
+      .road_page .roadmap .track .circle > div, .road_page .roadmap .track .circle > p {
+        display: block; }
+      .road_page .roadmap .track .circle .head {
+        color: #dee2ee;
+        float: left;
+        width: 100%;
+        font-size: 13px;
+        padding-top: 20px;
+        text-transform: uppercase; }
+      .road_page .roadmap .track .circle > p {
+        color: #9eaacc;
+        font-size: 13px;
+        line-height: 130%;
+        float: left;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 7px; }
+      .road_page .roadmap .track .circle .text {
+        color: #667bd8;
+        font-size: 13px;
+        line-height: 32px;
+        display: none;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box; }
+      .road_page .roadmap .track .circle .click {
+        display: inline-block; }
+        .road_page .roadmap .track .circle .click.active {
+          background-position: 0 100%; }
+      .road_page .roadmap .track .circle:first-child:before {
+        display: block; }
+      .road_page .roadmap .track .circle.circle25 {
+        padding-bottom: 0; }
+        .road_page .roadmap .track .circle.circle25:hover:before, .road_page .roadmap .track .circle.circle25:before {
+          display: none; }
+      .road_page .roadmap .track .circle.circle16:before {
+        display: block; }
+      .road_page .roadmap .track .circle:before {
+        width: 2px;
+        height: 90px;
+        left: 50%;
+        bottom: 0;
+        margin: 0;
+        margin-left: -1px; } }
+@media (min-width: 801px) {
+  .road_page .roadmap .track .circle .text {
+    display: none !important; } }
 @media (max-width: 750px) {
   .plan_page .stages h1 {
     margin-top: 50px; }
@@ -2716,9 +2833,9 @@ h2 {
     -webkit-zoom: 0.8;
     -moz-transform: scale(0.8); }
 
-  .road_page .roadmap .map .line .track {
+  .road_page .roadmap .track {
     width: 368px; }
-    .road_page .roadmap .map .line .track .space {
+    .road_page .roadmap .track .space {
       width: 65px; } }
 @media (max-width: 460px) {
   @-moz-document url-prefix() {
@@ -2818,12 +2935,6 @@ h2 {
     -ms-zoom: 0.35;
     -webkit-zoom: 0.35;
     -moz-transform: scale(0.35); }
-
-  .road_page .roadmap .map .line .track {
-    zoom: 0.8;
-    -ms-zoom: 0.8;
-    -webkit-zoom: 0.8;
-    -moz-transform: scale(0.8); }
 
   .road_page .faq .centered {
     zoom: 0.7;

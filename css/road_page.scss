@@ -172,12 +172,100 @@
         position: relative;
         overflow: hidden;
 
+        h2 {
+            padding-bottom: 45px;
+        }
+
+        .track {
+            width: 100%;
+            padding-top: 50px;
+            margin-bottom: -30px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+
+            .tooltip {
+                .head {
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 11px;
+                    line-height: 130%;
+
+                    + p {
+                        color: #9eaacc;
+                        font-size: 12px;
+                        line-height: 140%;
+                        padding-top: 5px;
+                    }
+                }
+            }
+
+            .circle {
+                width: 18px;
+                height: 18px;
+                background: url('../img/dots.png') no-repeat 0 0;
+                display: inline-block;
+                margin-left: 31px;
+                position: relative;
+
+                .click {
+                    display: none;
+                    width: 46px;
+                    height: 46px;
+                    background: url(../img/points.png) no-repeat 0 0;
+                    margin: 0 auto;
+                }
+
+                > div, > p {
+                    display: none;
+                }
+
+                .text {
+                    display: none;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                + .tooltip {
+                    display: none !important;
+                }
+
+                &.active {
+                    background-position: 0 bottom;
+
+                    + .tooltip {
+                        display: block !important;
+                    }
+
+                    &:before {
+                        background: #75a1fe;
+                    }
+                }
+
+                &:before {
+                    content: "";
+                    width: 30px;
+                    height: 2px;
+                    margin: 6px 2px;
+                    background: #434f74;
+                    left: -34px;
+                    position: absolute;
+                }
+            }
+        }
+
         .map {
             width: 100%;
-           
             float: left;
             margin-top: -70px;
             position: relative;
+            z-index: 1;
 
             .points {
                 padding-top: 210px;
@@ -250,35 +338,6 @@
                     font-size: 14px;
                     text-align: center;
                     line-height: 38px;
-                }
-                
-                .track {
-                    width: 468px;
-                    margin: 0 auto;
-                    padding-top: 8px;
-
-                    .circle {
-                        width: 18px;
-                        height: 18px;
-                        background: url('../img/dots.png') no-repeat 0 0;
-                        float: left;
-
-                        &.active {
-                            background-position: 0 bottom;
-                        }
-                    }
-
-                    .space {
-                        width: 90px;
-                        height: 2px;
-                        margin: 6px 2px;
-                        background: #434f74;
-                        float: left;
-
-                        &.active {
-                            background: #75a1fe;
-                        }
-                    }
                 }
 
                 .description {
